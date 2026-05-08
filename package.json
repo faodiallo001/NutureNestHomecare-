@@ -2,10 +2,7 @@
   "name": "nurturenest-homecare",
   "version": "1.0.0",
   "description": "Nurturenest Homecare website",
-  "main": "index.js",
   "scripts": {
-    "dev": "vercel dev",
-    "start": "vercel dev",
     "build": "echo Build completed"
   },
   "keywords": [
@@ -15,8 +12,5 @@
     "nurturenest"
   ],
   "author": "Nurturenest Homecare",
-  "license": "ISC",
-  "devDependencies": {
-    "vercel": "^39.1.0"
-  }
+  "license": "ISC"
 }
