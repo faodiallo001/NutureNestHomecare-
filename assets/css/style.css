@@ -1,4 +1,4 @@
-{
+*{
   margin:0;
   padding:0;
   box-sizing:border-box;
@@ -10,8 +10,8 @@ html{
 
 body{
   font-family:'Poppins', sans-serif;
-  background:#d47b82;
-  color:#fff;
+  background:#4b234a;
+  color:#e7c7c7;
   line-height:1.7;
   overflow-x:hidden;
 }
@@ -21,9 +21,10 @@ body::before{
   position:fixed;
   inset:0;
   background:
-    radial-gradient(circle at top left, rgba(217,167,175,0.35), transparent 35%),
-    radial-gradient(circle at bottom right, rgba(255,255,255,0.12), transparent 35%),
-    linear-gradient(135deg,#4b234a,#2b102b);
+    radial-gradient(circle at top left, rgba(212,123,130,0.22), transparent 35%),
+    radial-gradient(circle at bottom right, rgba(255,255,255,0.05), transparent 30%),
+    radial-gradient(circle at center, rgba(212,123,130,0.08), transparent 45%),
+    linear-gradient(135deg,#4b234a,#2d102c);
   z-index:-2;
 }
 
@@ -31,7 +32,7 @@ body::after{
   content:"";
   position:fixed;
   inset:0;
-  backdrop-filter:blur(40px);
+  backdrop-filter:blur(35px);
   z-index:-1;
 }
 
@@ -46,9 +47,13 @@ a{
 }
 
 .container{
-  width:90%;
-  max-width:1200px;
+  width:88%;
+  max-width:1350px;
   margin:auto;
+}
+
+section{
+  padding:70px 0;
 }
 
 /* HEADER */
@@ -58,9 +63,9 @@ a{
   top:0;
   z-index:1000;
   padding:18px 0;
-  background:rgba(75,35,74,0.55);
+  background:rgba(75,35,74,0.62);
   backdrop-filter:blur(22px);
-  border-bottom:1px solid rgba(255,255,255,0.12);
+  border-bottom:1px solid rgba(231,199,199,0.12);
 }
 
 .nav{
@@ -73,57 +78,49 @@ a{
   width:170px;
 }
 
+.logo-text{
+  font-family:'Playfair Display', serif;
+  font-size:28px;
+  color:white;
+  font-weight:700;
+}
+
 .nav-links{
   display:flex;
-  gap:32px;
+  gap:34px;
 }
 
 .nav-links a{
-  color:#f8e9ef;
+  color:#e7c7c7;
   font-size:15px;
-  font-weight:500;
-  opacity:.85;
-  transition:.35s ease;
+  font-weight:600;
+  opacity:.9;
+  transition:.3s ease;
 }
 
 .nav-links a:hover,
 .active-link{
-  color:#d9a7af;
-  opacity:1;
+  color:#d47b82;
 }
 
 .nav-btn{
-  background:rgba(255,255,255,0.14);
+  background:rgba(255,255,255,0.10);
   color:white;
-  padding:14px 26px;
+  padding:14px 28px;
   border-radius:999px;
-  border:1px solid rgba(255,255,255,0.22);
-  backdrop-filter:blur(18px);
-  font-weight:600;
-  transition:.35s ease;
+  border:1px solid rgba(231,199,199,0.25);
+  backdrop-filter:blur(16px);
+  font-weight:700;
+  transition:.3s ease;
 }
 
 .nav-btn:hover{
-  background:#d9a7af;
+  background:#d47b82;
   color:#4b234a;
   transform:translateY(-3px);
 }
 
-/* GENERAL */
-
-section{
-  padding:100px 0;
-}
-
-.eyebrow,
-.section-mini,
-.section-heading span{
-  color:#d9a7af;
-  text-transform:uppercase;
-  letter-spacing:3px;
-  font-size:13px;
-  font-weight:700;
-}
+/* HERO */
 
 .hero,
 .page-hero{
@@ -140,30 +137,46 @@ section{
 .mission-grid{
   display:grid;
   grid-template-columns:1fr 1fr;
-  gap:70px;
+  gap:80px;
   align-items:center;
+}
+
+.eyebrow,
+.section-mini,
+.section-heading span{
+  color:#d47b82;
+  text-transform:uppercase;
+  letter-spacing:3px;
+  font-size:13px;
+  font-weight:800;
 }
 
 .hero h1,
 .page-hero h1{
   font-family:'Playfair Display', serif;
-  font-size:72px;
+  font-size:76px;
   line-height:1.05;
   color:white;
-  margin:22px 0;
+  margin:24px 0;
 }
 
 .hero h1 em,
 .page-hero h1 em{
-  color:#d9a7af;
+  color:#e7c7c7;
   font-style:italic;
 }
 
 .hero p,
 .page-hero p{
   max-width:620px;
-  color:#f3dfe6;
+  color:#e7c7c7;
   font-size:18px;
+}
+
+.hero-buttons{
+  display:flex;
+  gap:18px;
+  margin-top:35px;
 }
 
 /* BUTTONS */
@@ -173,33 +186,33 @@ section{
 .btn-light,
 .submit-btn{
   display:inline-block;
-  padding:16px 30px;
+  padding:16px 32px;
   border-radius:999px;
-  font-weight:700;
+  font-weight:800;
   border:none;
   cursor:pointer;
-  transition:.35s ease;
+  transition:.3s ease;
 }
 
 .btn-primary,
 .submit-btn{
-  background:#d9a7af;
+  background:#d47b82;
   color:#4b234a;
-  box-shadow:0 20px 45px rgba(217,167,175,.25);
+  box-shadow:0 18px 45px rgba(212,123,130,.28);
 }
 
 .btn-primary:hover,
 .submit-btn:hover{
   transform:translateY(-4px);
-  box-shadow:0 25px 60px rgba(217,167,175,.4);
+  box-shadow:0 24px 60px rgba(212,123,130,.42);
 }
 
 .btn-secondary,
 .btn-light{
-  background:rgba(255,255,255,.12);
+  background:rgba(255,255,255,.09);
   color:white;
-  border:1px solid rgba(255,255,255,.25);
-  backdrop-filter:blur(20px);
+  border:1px solid rgba(231,199,199,.22);
+  backdrop-filter:blur(16px);
 }
 
 .btn-secondary:hover,
@@ -209,10 +222,56 @@ section{
   transform:translateY(-4px);
 }
 
-.hero-buttons{
-  display:flex;
-  gap:18px;
-  margin-top:35px;
+/* IMAGES */
+
+.hero-image{
+  position:relative;
+}
+
+.hero-image img,
+.about-image img,
+.services-image img,
+.contact-image img,
+.appointment-image img{
+  border-radius:36px;
+  border:1px solid rgba(231,199,199,.18);
+  box-shadow:0 35px 90px rgba(0,0,0,.35);
+}
+
+.hero-card{
+  position:absolute;
+  bottom:-28px;
+  right:28px;
+  background:rgba(255,255,255,.13);
+  border:1px solid rgba(231,199,199,.25);
+  backdrop-filter:blur(18px);
+  padding:26px 34px;
+  border-radius:30px;
+  color:white;
+}
+
+.hero-card strong{
+  font-family:'Playfair Display', serif;
+  font-size:28px;
+  color:white;
+}
+
+.hero-card span{
+  color:#e7c7c7;
+}
+
+/* SECTION HEADINGS */
+
+.section-heading{
+  text-align:center;
+  margin-bottom:60px;
+}
+
+.section-heading h2{
+  font-family:'Playfair Display', serif;
+  color:white;
+  font-size:56px;
+  margin-top:18px;
 }
 
 /* GLASS CARDS */
@@ -225,76 +284,23 @@ section{
 .service-detail-card,
 .mission-card,
 .serve-card{
-  background:rgba(255,255,255,0.13);
-  border:1px solid rgba(255,255,255,0.18);
-  backdrop-filter:blur(24px);
+  background:rgba(255,255,255,0.07);
+  border:1px solid rgba(231,199,199,0.16);
+  backdrop-filter:blur(16px);
   border-radius:34px;
-  box-shadow:0 30px 80px rgba(0,0,0,.22);
-  transition:.35s ease;
+  box-shadow:0 28px 70px rgba(0,0,0,.18);
+  transition:.3s ease;
 }
 
 .service-card:hover,
 .why-grid div:hover,
 .contact-card:hover,
-.service-detail-card:hover{
+.service-detail-card:hover,
+.mission-card:hover,
+.serve-card:hover{
   transform:translateY(-8px);
-  background:rgba(255,255,255,0.18);
-}
-
-/* IMAGES */
-
-.hero-image,
-.about-image,
-.services-image,
-.contact-image,
-appointment-image{
-  position:relative;
-}
-
-.hero-image img,
-.about-image img,
-.services-image img,
-.contact-image img,
-.appointment-image img{
-  border-radius:36px;
-  border:1px solid rgba(255,255,255,.18);
-  box-shadow:0 35px 90px rgba(0,0,0,.35);
-}
-
-.hero-card{
-  position:absolute;
-  bottom:-28px;
-  right:28px;
-  background:rgba(255,255,255,.16);
-  border:1px solid rgba(255,255,255,.25);
-  backdrop-filter:blur(22px);
-  padding:26px;
-  border-radius:30px;
-  color:white;
-}
-
-.hero-card strong{
-  font-family:'Playfair Display', serif;
-  font-size:26px;
-  color:white;
-}
-
-.hero-card span{
-  color:#f3dfe6;
-}
-
-/* SECTION HEADINGS */
-
-.section-heading{
-  text-align:center;
-  margin-bottom:70px;
-}
-
-.section-heading h2{
-  font-family:'Playfair Display', serif;
-  color:white;
-  font-size:52px;
-  margin-top:18px;
+  background:rgba(255,255,255,0.11);
+  border-color:rgba(212,123,130,0.38);
 }
 
 /* SERVICES */
@@ -306,7 +312,7 @@ appointment-image{
 }
 
 .service-card{
-  padding:38px 26px;
+  padding:38px 28px;
   text-align:center;
 }
 
@@ -318,8 +324,8 @@ appointment-image{
   margin:auto;
   margin-bottom:22px;
   border-radius:50%;
-  background:rgba(217,167,175,.22);
-  color:#ffd8df;
+  background:rgba(212,123,130,.20);
+  color:#e7c7c7;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -329,15 +335,20 @@ appointment-image{
 .service-card h3,
 .why-grid h3,
 .service-detail-content h2,
-.contact-card h3{
+.contact-card h3,
+.mission-card h3,
+.serve-card h3{
   color:white;
 }
 
 .service-card p,
 .why-grid p,
 .service-detail-content p,
-.service-detail-content li{
-  color:#f3dfe6;
+.service-detail-content li,
+.contact-card p,
+.mission-card p,
+.serve-card p{
+  color:#e7c7c7;
 }
 
 /* ABOUT */
@@ -350,7 +361,7 @@ appointment-image{
 .appointment-form-box h2{
   font-family:'Playfair Display', serif;
   color:white;
-  font-size:52px;
+  font-size:54px;
   line-height:1.15;
   margin:20px 0;
 }
@@ -360,7 +371,7 @@ appointment-image{
 .contact-info p,
 .appointment-info p,
 .about-text li{
-  color:#f3dfe6;
+  color:#e7c7c7;
 }
 
 .about-text ul{
@@ -380,29 +391,47 @@ appointment-image{
   padding:38px;
 }
 
-/* CTA */
+/* MISSION / SERVE */
+
+.mission-grid,
+.serve-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:30px;
+}
+
+.serve-grid{
+  grid-template-columns:repeat(3,1fr);
+}
+
+.mission-card,
+.serve-card{
+  padding:38px;
+}
+
+/* CTA / QUOTE */
 
 .cta-box,
 .quote-box{
-  background:rgba(255,255,255,.14);
-  border:1px solid rgba(255,255,255,.22);
-  backdrop-filter:blur(24px);
+  background:rgba(255,255,255,.09);
+  border:1px solid rgba(231,199,199,.20);
+  backdrop-filter:blur(18px);
   border-radius:42px;
-  padding:80px;
+  padding:70px;
   text-align:center;
-  box-shadow:0 30px 90px rgba(0,0,0,.25);
+  box-shadow:0 28px 80px rgba(0,0,0,.22);
 }
 
 .cta-box h2,
 .quote-box h2{
   font-family:'Playfair Display', serif;
-  font-size:50px;
+  font-size:52px;
   color:white;
 }
 
 .cta-box p,
 .quote-box p{
-  color:#f3dfe6;
+  color:#e7c7c7;
   margin:22px 0 32px;
 }
 
@@ -421,8 +450,8 @@ appointment-image{
 .form-group label{
   display:block;
   margin-bottom:10px;
-  color:#f6dce4;
-  font-weight:600;
+  color:#e7c7c7;
+  font-weight:700;
 }
 
 .form-group input,
@@ -431,8 +460,8 @@ appointment-image{
   width:100%;
   padding:17px;
   border-radius:18px;
-  border:1px solid rgba(255,255,255,.18);
-  background:rgba(255,255,255,.14);
+  border:1px solid rgba(231,199,199,.18);
+  background:rgba(255,255,255,.10);
   color:white;
   outline:none;
   font-family:'Poppins', sans-serif;
@@ -440,14 +469,31 @@ appointment-image{
 
 .form-group input::placeholder,
 .form-group textarea::placeholder{
-  color:#ead1da;
+  color:#e7c7c7;
+  opacity:.75;
 }
 
 textarea{
   resize:none;
 }
 
-/* DETAIL SERVICES */
+/* CONTACT */
+
+.contact-cards{
+  margin-top:35px;
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+
+.contact-card{
+  display:flex;
+  gap:18px;
+  align-items:center;
+  padding:22px;
+}
+
+/* SERVICE DETAIL */
 
 .service-detail-card{
   padding:45px;
@@ -458,20 +504,41 @@ textarea{
 
 .service-detail-icon{
   min-width:85px;
+  height:85px;
+  font-size:32px;
+}
+
+.service-detail-content h2{
+  font-family:'Playfair Display', serif;
+  font-size:36px;
+  margin-bottom:18px;
+}
+
+.service-detail-content p{
+  margin-bottom:20px;
+}
+
+.service-detail-content ul{
+  padding-left:20px;
+}
+
+.service-detail-content ul li{
+  margin-bottom:10px;
 }
 
 /* FOOTER */
 
 .site-footer{
-  padding-top:90px;
-  background:rgba(0,0,0,.12);
+  padding-top:40px;
+  background:rgba(0,0,0,.14);
 }
 
 .footer-grid{
   display:grid;
   grid-template-columns:2fr 1fr 1fr;
   gap:50px;
-  padding-bottom:50px;
+  padding:30px 0;
+  align-items:flex-start;
 }
 
 .footer-logo{
@@ -487,15 +554,15 @@ textarea{
 .footer-grid a,
 .footer-grid p{
   display:block;
-  color:#f3dfe6;
+  color:#e7c7c7;
   margin-bottom:12px;
 }
 
 .footer-bottom{
-  border-top:1px solid rgba(255,255,255,.12);
+  border-top:1px solid rgba(231,199,199,.12);
   text-align:center;
-  padding:28px 0;
-  color:#f3dfe6;
+  padding:24px 0;
+  color:#e7c7c7;
 }
 
 /* RESPONSIVE */
@@ -507,6 +574,7 @@ textarea{
   .contact-grid,
   .appointment-grid,
   .mission-grid,
+  .serve-grid,
   .services-grid,
   .why-grid,
   .footer-grid,
@@ -531,6 +599,11 @@ textarea{
   .contact-form-box h2,
   .appointment-form-box h2{
     font-size:38px;
+  }
+
+  .hero,
+  .page-hero{
+    min-height:auto;
   }
 
   .cta-box,
