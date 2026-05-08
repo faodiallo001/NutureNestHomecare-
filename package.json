@@ -1,1 +1,22 @@
-
+{
+  "name": "nurturenest-homecare",
+  "version": "1.0.0",
+  "description": "Nurturenest Homecare website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "start": "vercel dev",
+    "build": "echo Build completed"
+  },
+  "keywords": [
+    "homecare",
+    "caregiver",
+    "elderly-care",
+    "nurturenest"
+  ],
+  "author": "Nurturenest Homecare",
+  "license": "ISC",
+  "devDependencies": {
+    "vercel": "^39.1.0"
+  }
+}
