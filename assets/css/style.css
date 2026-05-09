@@ -687,4 +687,103 @@ img{
     flex-direction:column;
     gap:12px;
   }
+.contact-page{
+  padding:90px 6%;
+  display:grid;
+  grid-template-columns:0.95fr 1.05fr;
+  gap:60px;
+  align-items:center;
+}
+
+.contact-left h1{
+  font-family:'Cormorant Garamond', serif;
+  font-size:70px;
+  line-height:1;
+  color:white;
+  margin-bottom:24px;
+}
+
+.contact-left h1 span{
+  color:var(--pink);
+  font-style:italic;
+}
+
+.contact-intro{
+  max-width:620px;
+  font-size:17px;
+  line-height:1.8;
+  margin-bottom:34px;
+}
+
+.contact-info-list{
+  display:grid;
+  gap:18px;
+}
+
+.contact-item{
+  display:flex;
+  align-items:center;
+  gap:18px;
+  padding:20px;
+  border-radius:24px;
+  background:rgba(255,255,255,0.06);
+  border:1px solid rgba(231,199,199,0.16);
+  backdrop-filter:blur(16px);
+}
+
+.contact-item h3{
+  color:white;
+  font-size:18px;
+  margin-bottom:4px;
+}
+
+.contact-item p{
+  color:var(--text);
+}
+
+.contact-form-card{
+  padding:42px;
+  border-radius:34px;
+  background:rgba(255,255,255,0.07);
+  border:1px solid rgba(231,199,199,0.18);
+  backdrop-filter:blur(18px);
+  box-shadow:0 30px 80px rgba(0,0,0,0.25);
+}
+
+.contact-form-card h2{
+  font-family:'Cormorant Garamond', serif;
+  font-size:48px;
+  color:white;
+  margin-bottom:26px;
+}
+
+.contact-quote{
+  margin:0 6% 60px;
+  padding:50px;
+  border-radius:32px;
+  background:linear-gradient(135deg, rgba(212,123,130,0.25), rgba(255,255,255,0.06));
+  border:1px solid rgba(231,199,199,0.18);
+  text-align:center;
+}
+
+.contact-quote h2{
+  font-family:'Cormorant Garamond', serif;
+  font-size:42px;
+  color:white;
+}
+
+@media(max-width:900px){
+  .contact-page{
+    grid-template-columns:1fr;
+  }
+
+  .contact-left h1{
+    font-size:48px;
+  }
+
+  .contact-form-card{
+    padding:28px;
+  }
+
+  
 }
