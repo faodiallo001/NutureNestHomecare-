@@ -595,6 +595,93 @@ img{
     padding-left:24px;
     padding-right:24px;
   }
+.about-page-hero{
+  padding:90px 6%;
+  display:grid;
+  grid-template-columns:0.9fr 1.1fr;
+  gap:60px;
+  align-items:center;
+}
+
+.about-page-text h1{
+  font-family:'Cormorant Garamond', serif;
+  font-size:72px;
+  line-height:1;
+  color:white;
+  margin-bottom:28px;
+}
+
+.about-page-text h1 span{
+  color:var(--pink);
+  font-style:italic;
+}
+
+.about-page-text p{
+  max-width:620px;
+  line-height:1.8;
+  margin-bottom:30px;
+}
+
+.about-page-image img{
+  height:520px;
+  object-fit:cover;
+  border-radius:38px;
+  border:1px solid rgba(231,199,199,0.18);
+  box-shadow:0 35px 90px rgba(0,0,0,0.35);
+}
+
+.mission-section{
+  padding:30px 6% 90px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:30px;
+}
+
+.mission-box,
+.value-card{
+  background:var(--glass);
+  border:1px solid var(--glass-border);
+  backdrop-filter:blur(18px);
+  border-radius:30px;
+  padding:38px;
+}
+
+.mission-box h2{
+  font-family:'Cormorant Garamond', serif;
+  font-size:42px;
+  color:white;
+  line-height:1.1;
+  margin-bottom:18px;
+}
+
+.about-values{
+  padding:0 6% 80px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:25px;
+}
+
+.value-card h3{
+  font-family:'Cormorant Garamond', serif;
+  font-size:30px;
+  color:white;
+  margin-bottom:14px;
+}
+
+@media(max-width:900px){
+  .about-page-hero,
+  .mission-section,
+  .about-values{
+    grid-template-columns:1fr;
+  }
+
+  .about-page-text h1{
+    font-size:48px;
+  }
+
+  .about-page-image img{
+    height:380px;
+  }
 
   .footer-links{
     flex-direction:column;
