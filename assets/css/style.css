@@ -697,4 +697,35 @@ img{
     padding:28px;
   }
 
+  @media(max-width:700px){
+
+  .site-header{
+    flex-direction:column;
+    gap:22px;
+    padding:28px 6%;
+  }
+
+  .brand img{
+    width:130px;
+  }
+
+  .nav-links{
+    display:flex !important;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:14px 22px;
+  }
+
+  .nav-links a{
+    font-size:14px;
+  }
+
+  .header-btn{
+    display:inline-flex !important;
+    padding:13px 24px;
+    font-size:14px;
+  }
+
+
+  
 }
