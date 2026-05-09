@@ -552,10 +552,14 @@ img{
   }
 
   .section-title h2,
-  .team-text h2,
-  .video-text h2{
-    font-size:40px;
-  }
+.team-text h2,
+.video-text h2{
+  font-size:40px;
+}
+
+}
+
+/* CONTACT PAGE SIMPLE */
   /* CONTACT PAGE SIMPLE */
 
 .contact-page{
