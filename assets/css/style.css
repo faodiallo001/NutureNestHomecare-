@@ -556,4 +556,141 @@ img{
   .video-text h2{
     font-size:40px;
   }
+  /* CONTACT PAGE SIMPLE */
+
+.contact-page{
+  padding:0;
+}
+
+.contact-hero-simple{
+  padding:90px 6%;
+  display:grid;
+  grid-template-columns:1fr 0.9fr;
+  gap:70px;
+  align-items:center;
+}
+
+.contact-text h1{
+  font-family:'Cormorant Garamond', serif;
+  font-size:68px;
+  line-height:1;
+  color:white;
+  margin-bottom:24px;
+}
+
+.contact-text h1 span{
+  color:var(--pink);
+  font-style:italic;
+}
+
+.contact-description{
+  max-width:620px;
+  line-height:1.8;
+  margin-bottom:34px;
+  color:var(--text);
+}
+
+.contact-info{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+
+.contact-box{
+  padding:22px;
+  border-radius:24px;
+  background:var(--glass);
+  border:1px solid var(--border);
+  backdrop-filter:blur(18px);
+}
+
+.contact-box h3{
+  color:white;
+  margin-bottom:6px;
+  font-size:18px;
+}
+
+.contact-box p{
+  color:var(--text);
+  font-size:14px;
+}
+
+.contact-form-card{
+  padding:42px;
+  border-radius:34px;
+  background:var(--glass);
+  border:1px solid var(--border);
+  backdrop-filter:blur(18px);
+  box-shadow:0 30px 80px rgba(0,0,0,.25);
+}
+
+.contact-form-card h2{
+  font-family:'Cormorant Garamond', serif;
+  color:white;
+  font-size:48px;
+  margin-bottom:28px;
+}
+
+.contact-form .form-group{
+  margin-bottom:18px;
+}
+
+.contact-form input,
+.contact-form textarea{
+  width:100%;
+  padding:16px 18px;
+  border-radius:18px;
+  border:1px solid rgba(231,199,199,.22);
+  background:rgba(255,255,255,.08);
+  color:white;
+  font-family:'Poppins', sans-serif;
+  outline:none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder{
+  color:rgba(231,199,199,.75);
+}
+
+.contact-form textarea{
+  resize:none;
+}
+
+.contact-bottom-quote{
+  margin:0 6% 60px;
+  padding:42px;
+  border-radius:30px;
+  background:rgba(212,123,130,.13);
+  border:1px solid rgba(231,199,199,.18);
+  backdrop-filter:blur(18px);
+  text-align:center;
+}
+
+.contact-bottom-quote p{
+  font-family:'Cormorant Garamond', serif;
+  color:white;
+  font-size:34px;
+  line-height:1.2;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+  .contact-hero-simple{
+    grid-template-columns:1fr;
+    padding:60px 6%;
+  }
+
+  .contact-text h1{
+    font-size:48px;
+  }
+
+  .contact-info{
+    grid-template-columns:1fr;
+  }
+
+  .contact-form-card{
+    padding:28px;
+  }
+
 }
