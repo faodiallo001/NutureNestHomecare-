@@ -755,6 +755,90 @@ img{
     display:none !important;
   }
 
-
-  
+.contact-page-clean{
+  padding:90px 6%;
+  display:grid;
+  grid-template-columns:1fr 0.9fr;
+  gap:70px;
+  align-items:center;
 }
+
+.contact-left-clean h1{
+  font-family:'Cormorant Garamond', serif;
+  font-size:68px;
+  line-height:1;
+  color:white;
+  margin-bottom:24px;
+}
+
+.contact-left-clean p{
+  max-width:620px;
+  line-height:1.8;
+  margin-bottom:28px;
+}
+
+.contact-details-clean{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+}
+
+.contact-details-clean div,
+.contact-form-clean{
+  background:var(--glass);
+  border:1px solid var(--border);
+  backdrop-filter:blur(18px);
+  border-radius:28px;
+  padding:28px;
+}
+
+.contact-details-clean h3{
+  color:white;
+  margin-bottom:8px;
+}
+
+.contact-form-clean h2{
+  font-family:'Cormorant Garamond', serif;
+  font-size:48px;
+  color:white;
+  margin-bottom:28px;
+}
+
+.contact-form-clean form{
+  display:grid;
+  gap:18px;
+}
+
+.contact-form-clean input,
+.contact-form-clean textarea{
+  width:100%;
+  padding:16px 18px;
+  border-radius:18px;
+  border:1px solid rgba(231,199,199,.22);
+  background:rgba(255,255,255,.08);
+  color:white;
+  font-family:'Poppins', sans-serif;
+  outline:none;
+}
+
+.contact-form-clean input::placeholder,
+.contact-form-clean textarea::placeholder{
+  color:rgba(231,199,199,.75);
+}
+
+@media(max-width:900px){
+  .contact-page-clean{
+    grid-template-columns:1fr;
+    padding:60px 6%;
+  }
+
+  .contact-left-clean h1{
+    font-size:46px;
+  }
+
+  .contact-details-clean{
+    grid-template-columns:1fr;
+  }
+}
+  
+
