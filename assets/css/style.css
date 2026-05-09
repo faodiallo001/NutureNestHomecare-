@@ -725,7 +725,43 @@ img{
     padding:13px 24px;
     font-size:14px;
   }
+@media(max-width:700px){
 
+  .site-header{
+    flex-direction:column;
+    gap:18px;
+    padding:28px 5% 24px;
+  }
+
+  .brand img{
+    width:120px;
+    margin:auto;
+  }
+
+  .nav-links{
+    display:flex !important;
+    flex-wrap:nowrap;
+    justify-content:center;
+    align-items:center;
+    gap:18px;
+    width:100%;
+    overflow-x:auto;
+    white-space:nowrap;
+    padding-bottom:8px;
+  }
+
+  .nav-links a{
+    font-size:14px;
+    flex:0 0 auto;
+  }
+
+  .header-btn{
+    display:none !important;
+  }
+
+.header-btn{
+  display:none !important;
+}
 
   
 }
